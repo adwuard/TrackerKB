@@ -1,0 +1,6 @@
+[submodule "software/src/Adafruit_TinyUSB_Arduino"]
+	path = software/src/Adafruit_TinyUSB_Arduino
+	url = https://github.com/adafruit/Adafruit_TinyUSB_Arduino/
+[submodule "software/src/TinyUSB_Mouse_and_Keyboard"]
+	path = software/src/TinyUSB_Mouse_and_Keyboard
+	url = https://github.com/cyborg5/TinyUSB_Mouse_and_Keyboard/
