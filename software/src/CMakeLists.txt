@@ -13,7 +13,6 @@ add_executable(pico-m8-keyboard
     Adafruit_TinyUSB_Arduino/src/arduino/hid/Adafruit_USBD_HID.cpp
     Adafruit_TinyUSB_Arduino/src/arduino/Adafruit_USBD_Device.cpp
     Adafruit_TinyUSB_Arduino/src/arduino/ports/rp2040/Adafruit_TinyUSB_rp2040.cpp
-    Print.cpp
 )
 
 target_include_directories(pico-m8-keyboard PRIVATE ${CMAKE_CURRENT_LIST_DIR})

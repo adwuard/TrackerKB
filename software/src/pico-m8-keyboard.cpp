@@ -30,6 +30,8 @@
 
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
+#include "pico/binary_info.h"
+
 #include "includes/usb.h"
 #include "includes/Adafruit_USBD_CDC-stub.h"
 #include "Adafruit_TinyUSB_Arduino/src/Adafruit_TinyUSB.h"
@@ -44,6 +46,9 @@
 #define KEY_EDIT_PIN 12
 #define KEY_SHIFT_PIN 13
 #define KEY_PLAY_PIN 14
+
+// Adafruit TinyUSB instance
+extern Adafruit_USBD_Device TinyUSBDevice;
 
 // Key code mapping for the keys
 static const int kMaxKeys = 8;
@@ -62,6 +67,9 @@ static const int kDebounceDelay = 5;
 static uint32_t debounce[kMaxKeys][2];
 
 int main() {
+    bi_decl(bi_program_description("Dirtywave M8 Tracker Keyboard"));
+    bi_decl(bi_program_feature("USB HID Device"));
+
     board_init();
     TinyUSBDevice.begin();
     Keyboard.begin();
