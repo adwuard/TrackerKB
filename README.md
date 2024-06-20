@@ -22,9 +22,8 @@
 
 
 # Overview
-This is an over-engineered version of the headless Dirtywave M8 tracker.
-![Hardware Image](image/2024-06-14_0-11-16.png)
-
+This is a slightly over-engineered version of the headless Dirtywave M8 tracker.
+<img src="image/2024-06-14_0-11-16.png" width="550">
 
 # Features
 - Built-in USB HUB connected to both Teensy 4.1 and Keyboard
