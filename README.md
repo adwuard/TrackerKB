@@ -22,8 +22,14 @@
 
 
 # Overview
-This is a slightly over-engineered version of the headless Dirtywave M8 tracker.
-<img src="image/2024-06-14_0-11-16.png" width="550">
+This is a slightly over-engineered version of the Headless Dirtywave M8 tracker.
+<div style="display: flex; flex-direction: row;">
+  <img src="image/cnc-build/1.jpg" style="width:40%; padding-right: 5px;">
+  <img src="image/cnc-build/2.jpg" style="width:60%; padding-left: 5px;">
+</div>
+<div style="display: flex; flex-direction: row; margin-top: 20px;">
+  <img src="image/render/1.jpg" style="width:90%;">
+</div>
 
 # Features
 - Built-in USB HUB connected to both Teensy 4.1 and Keyboard
@@ -82,12 +88,14 @@ PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 Best quality and experience. It's a CNC machined enclosure that offers a great hand-held experience.
 ```
 Bill of Materials
-- x4 M3x6mm screws 
+- x4 M3x8mm screws 
 - x1 CNC top and bottom case 
 - x1 Optional, USB Type-C cable with screw lock (The pitch distance of the two screws is 15mm, and the size is M2 thumb screws)
+- x4 8mm x 1.5mm rubber pads
+- x1 12mmx12mmx1mm Thermal Pad 
 ```
 
-<img src="image/cnc-demo.png" width="460">
+<img src="image/cnc-build/cnc-cases.jpg" width="460">
 
 ### Option 2: Sandwiching Acrylic Enclosure
 A 4-layer acrylic sandwiching approach offers handling weight and durability while keeping the price cheaper compared to CNC. Note that the USB lock threads are not available in this design. The `*.dxf` files of each layer are provided for laser cut manufacturing.
@@ -121,7 +129,7 @@ How to assemble?
 - Support enabled  
 
 ==== Bill of Materials ====  
-- x4 M3x6mm screws 
+- x4 M3x8mm screws 
 - x1 Printed top and bottom case
 ```
 
