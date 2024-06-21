@@ -23,13 +23,15 @@
 
 # Overview
 This is a slightly over-engineered version of the Headless Dirtywave M8 tracker.
-<div style="display: flex; flex-direction: row;">
-  <img src="image/cnc-build/1.jpg" style="width:40%; padding-right: 5px;">
-  <img src="image/cnc-build/2.jpg" style="width:60%; padding-left: 5px;">
-</div>
 <div style="display: flex; flex-direction: row; margin-top: 20px;">
-  <img src="image/render/1.jpg" style="width:90%;">
+  <img src="image/render/1.jpg" style="width:75%;">
 </div>
+
+<div style="display: flex; flex-direction: row; margin-top: 50px;">
+  <img src="image/cnc-build/1.jpg" style="width:30%; padding-right: 5px;">
+  <img src="image/cnc-build/2.jpg" style="width:45%; padding-left: 5px;">
+</div>
+
 
 # Features
 - Built-in USB HUB connected to both Teensy 4.1 and Keyboard
