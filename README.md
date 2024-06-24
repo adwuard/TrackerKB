@@ -1,3 +1,8 @@
+
+### Fully Assembled units and parts are available here: [Ed's Lab Shop](https://edslab.myshopify.com/) 
+Batch update:
+The first batch is estimated to be shipped by July 14, 2024.
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
@@ -18,11 +23,11 @@
     - [Keyboard Firmware Highlights](#keyboard-firmware-highlights)
     - [Pre-built keyboard firmware can be found here --\>  Keyboard Firmware](#pre-built-keyboard-firmware-can-be-found-here-----keyboard-firmware)
     - [Steps for Flashing Keyboard Firmware:](#steps-for-flashing-keyboard-firmware)
-            
-
+      
 
 # Overview
 This is a slightly over-engineered version of the Headless Dirtywave M8 tracker.
+
 <div style="display: flex; flex-direction: row; margin-top: 20px;">
   <img src="image/render/1.jpg" style="width:75%;">
 </div>
