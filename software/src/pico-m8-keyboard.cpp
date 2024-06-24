@@ -57,8 +57,8 @@ static const char keys_map[kMaxKeys][2] = {
     {KEY_DOWN_PIN, KEY_DOWN_ARROW}, //mapped to arrow down
     {KEY_LEFT_PIN, KEY_LEFT_ARROW}, //mapped to arrow left
     {KEY_RIGHT_PIN, KEY_RIGHT_ARROW}, //mapped to arrow right 
-    {KEY_OPTION_PIN, 'Z'}, //mapped to Z key
-    {KEY_EDIT_PIN, 'X'}, //mapped to X Key
+    {KEY_OPTION_PIN, 'z'}, //mapped to z key
+    {KEY_EDIT_PIN, 'x'}, //mapped to x Key
     {KEY_SHIFT_PIN, KEY_LEFT_SHIFT}, //mapped to  Left shift
     {KEY_PLAY_PIN, ' '}  //mapped to Space-bar
 };
