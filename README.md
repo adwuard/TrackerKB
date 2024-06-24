@@ -6,7 +6,7 @@
     - [System Diagram](#system-diagram)
   - [Electronics Build Guide](#electronics-build-guide)
     - [Soldering](#soldering)
-    - [Soldering Teensy 4.1 Tips](#soldering-teensy-41-tips)
+    - [Tips on Soldering Teensy 4.1](#tips-on-soldering-teensy-41)
   - [PCB Testing](#pcb-testing)
 - [Three Versions of Enclosure are Available](#three-versions-of-enclosure-are-available)
     - [Option 1: CNC Machined Enclosure](#option-1-cnc-machined-enclosure)
@@ -63,7 +63,7 @@ PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 :-:|:-:|:-:|:-:
 <img src="image/20240620-DSCF4548.jpg" width="150"> | <img src="image/20240620-DSCF4552.jpg" width="150">| <img src="image/20240620-DSCF4557.jpg" width="150"> | <img src="image/20240620-DSCF4566.jpg" width="150">
 
-### Soldering Teensy 4.1 Tips
+### Tips on Soldering Teensy 4.1 
 - Solder the pins that are marked with circles. Only 6 pins are required for soldering. This is enough to hold the board while still being easy to de-solder and repurpose if needed. To solder, add some solder flux onto the pads. Solder one pin first and ensure it's aligned properly. Place the soldering iron on the Teensy through-hole pad, and add a generous amount of solder. Hold the iron longer, around 8-15 seconds, and let the solder sink into the pad below.
   - <img src="image/teensy-soldering.png" width="350">
 
@@ -170,5 +170,5 @@ The keyboard is implemented with RP2040 keyboard HID implementation. You wouldn'
 - Download the single firmware `pico-m8-keyboard.uf2` file from the [Release](software/Release) Folder.
 - "Press and Hold" the `Boot` button on the RP2040 PCB board, connect the USB to your PC, then release the `Boot` button.
 - A disk will show up or get mounted, indicating that your RP2040 is in loader mode and ready to load firmware.
-- Simply drag and drop the `pico-m8-keyboard.urf` firmware file to the mounted disk.
+- Simply drag and drop the `pico-m8-keyboard.uf2` firmware file to the mounted disk.
 - The RP2040 will then unmount and reboot itself with the new firmware.
