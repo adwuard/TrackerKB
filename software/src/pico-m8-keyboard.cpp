@@ -67,7 +67,7 @@ static const int kDebounceDelay = 5;
 static uint32_t debounce[kMaxKeys][2];
 
 int main() {
-    bi_decl(bi_program_description("Dirtywave M8 Tracker Keyboard"));
+    bi_decl(bi_program_description("Tracker Keyboard"));
     bi_decl(bi_program_feature("USB HID Device"));
 
     board_init();

@@ -13,23 +13,20 @@
     - [Option 2: Sandwiching Acrylic Enclosure](#option-2-sandwiching-acrylic-enclosure)
     - [Option 3: 3D Printed Enclosure](#option-3-3d-printed-enclosure)
 - [Software Guide](#software-guide)
-  - [1. M8 Headless Firmware (Teensy 4.1)](#1-m8-headless-firmware-teensy-41)
+  - [1. Tracker Headless Firmware (Teensy 4.1)](#1-tracker-headless-firmware-teensy-41)
   - [2. Keyboard Firmware (RP2040 MCU)](#2-keyboard-firmware-rp2040-mcu)
     - [Keyboard Firmware Highlights](#keyboard-firmware-highlights)
     - [Pre-built keyboard firmware can be found here --\>  Keyboard Firmware](#pre-built-keyboard-firmware-can-be-found-here-----keyboard-firmware)
     - [Steps for Flashing Keyboard Firmware:](#steps-for-flashing-keyboard-firmware)
-            
-
 
 # Overview
-This is a slightly over-engineered version of the Headless Dirtywave M8 tracker.
+This is a slightly over-engineered tracker keyboard that integrates both Teensy4.1 and a keyboard.
 <div style="display: flex; flex-direction: row; margin-top: 20px;">
   <img src="image/render/1.jpg" style="width:75%;">
 </div>
 
 <div style="display: flex; flex-direction: row; margin-top: 50px;">
   <img src="image/cnc-build/1.jpg" style="width:30%; padding-right: 5px;">
-  <img src="image/cnc-build/2.jpg" style="width:45%; padding-left: 5px;">
 </div>
 
 
@@ -42,7 +39,6 @@ This is a slightly over-engineered version of the Headless Dirtywave M8 tracker.
   
 # Hardware Guide
 ### System Diagram 
-Integration of the keyboard and M8 Tracker headless in one contained unit with a USB Hub.
 <img src="image/system diagram.jpg" width="350">
 
 ## Electronics Build Guide
@@ -73,7 +69,7 @@ PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 ## PCB Testing
 <img src="image/20240620-L1008894.jpg" width="350">  
 
-🎉🎉🎉 Great job on finishing the PCB assembly. Now we will go through a checklist and testing process to help you get your M8 headless keyboard up and running!
+🎉🎉🎉 Great job on finishing the PCB assembly. Now we will go through a checklist and testing process to help you get your tracker keyboard up and running!
 
 - Visually check that all components are soldered properly with no solder bridges or shorts.
 - Before connecting to a PC, check that your 5V and 3V3 are not shorted to ground.
@@ -81,7 +77,7 @@ PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 - Follow the Software Guide section for flashing tutorials.
 - You can always open the Device Manager on your PC to check if all devices are being detected properly. Three devices should show up:
   - A `USB 2.0 Hub` device
-  - An M8 `Serial` and `Audio` composite device
+  - An Tracker `Serial` and `Audio` composite device
   - A `HID Keyboard` device
 
 
@@ -97,7 +93,7 @@ Bill of Materials
 - x1 12mmx12mmx1mm Thermal Pad 
 ```
 
-<img src="image/cnc-build/cnc-cases.jpg" width="460">
+<!-- <img src="image/cnc-build/cnc-cases.jpg" width="460"> -->
 
 ### Option 2: Sandwiching Acrylic Enclosure
 A 4-layer acrylic sandwiching approach offers handling weight and durability while keeping the price cheaper compared to CNC. Note that the USB lock threads are not available in this design. The `*.dxf` files of each layer are provided for laser cut manufacturing.
@@ -135,17 +131,18 @@ How to assemble?
 - x1 Printed top and bottom case
 ```
 
-Slicer Build Plate         |  Assembled
-:-------------------------:|:-------------------------:
-<img src="image/3d-printing-plate.jpg" width="350"> | <img src="image/3d-printed-demo.jpg" width="310">
+Slicer Build Plate         |
+:-------------------------:|
+<img src="image/3d-printing-plate.jpg" width="350"> 
+<!-- <img src="image/3d-printed-demo.jpg" width="310"> -->
 
 # Software Guide
 Two firmware flashes are required:
-1. M8 Headless firmware on Teensy
+1. Tracker Headless firmware on Teensy
 2. Keyboard firmware on the RP2040 microcontroller
 
-## 1. M8 Headless Firmware (Teensy 4.1)
-- Pre-compiled Dirtywave M8 Firmware and flashing guide can be found here: [Dirtywave Headless Firmware](https://github.com/Dirtywave/M8HeadlessFirmware)
+## 1. Tracker Headless Firmware (Teensy 4.1)
+- Pre-compiled Tracker Headless Firmware and flashing guide can be found here: [Headless Firmware](https://github.com/Dirtywave/M8HeadlessFirmware)
 - This is a pretty standard process and can be done easily.
 
 ## 2. Keyboard Firmware (RP2040 MCU)
@@ -155,9 +152,9 @@ The keyboard is implemented with RP2040 keyboard HID implementation. You wouldn'
 - Implemented in C++, offering better low-latency input compared to MicroPython.
 - Single firmware file. Drag and drop for a simple and fast upload process.
 - No more annoying MicroPython disk pop-up every time the device is connected.
-- Firmware M8 HID key mapping: 
-    (key mapping is the same as [M8-WebDisplay's](https://derkyjadex.github.io/M8WebDisplay/) default)
-    | M8 Keys | Mapped HID Keys|
+- HID key mapping: 
+    (key mapping is the same as [M8 WebDisplay's](https://derkyjadex.github.io/M8WebDisplay/) default)
+    | Tracker Hardware Keys | Mapped HID Keys|
     |------------------|------------------|
     |Arrow Keys| Arrow Keys|
     |Option| Z |
@@ -167,8 +164,8 @@ The keyboard is implemented with RP2040 keyboard HID implementation. You wouldn'
 
 ### Pre-built keyboard firmware can be found here -->  [Keyboard Firmware](software/Release)
 ### Steps for Flashing Keyboard Firmware:
-- Download the single firmware `pico-m8-keyboard.uf2` file from the [Release](software/Release) Folder.
+- Download the single firmware `pico-tracker-keyboard.uf2` file from the [Release](software/Release) Folder.
 - "Press and Hold" the `Boot` button on the RP2040 PCB board, connect the USB to your PC, then release the `Boot` button.
 - A disk will show up or get mounted, indicating that your RP2040 is in loader mode and ready to load firmware.
-- Simply drag and drop the `pico-m8-keyboard.uf2` firmware file to the mounted disk.
+- Simply drag and drop the `pico-tracker-keyboard.uf2` firmware file to the mounted disk.
 - The RP2040 will then unmount and reboot itself with the new firmware.
