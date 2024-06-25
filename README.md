@@ -1,3 +1,8 @@
+
+### Fully Assembled units and parts are available here: [Ed's Lab Shop](https://edslab.myshopify.com/) 
+Batch update:
+The first batch is estimated to be shipped by July 14, 2024.
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
@@ -21,6 +26,8 @@
 
 # Overview
 This is a slightly over-engineered tracker keyboard that integrates both Teensy4.1 and a keyboard.
+
+>>>>>>> a3ef860526b9f367cf588954446d36c82bc5aed3
 <div style="display: flex; flex-direction: row; margin-top: 20px;">
   <img src="image/render/1.jpg" style="width:75%;">
 </div>
