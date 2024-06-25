@@ -27,7 +27,6 @@ The first batch is estimated to be shipped by July 14, 2024.
 # Overview
 This is a slightly over-engineered tracker keyboard that integrates both Teensy4.1 and a keyboard.
 
->>>>>>> a3ef860526b9f367cf588954446d36c82bc5aed3
 <div style="display: flex; flex-direction: row; margin-top: 20px;">
   <img src="image/render/1.jpg" style="width:75%;">
 </div>
