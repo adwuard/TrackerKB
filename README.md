@@ -48,9 +48,9 @@ This is a slightly over-engineered tracker keyboard that integrates both Teensy4
 <img src="image/system diagram.jpg" width="350">
 
 ## Electronics Build Guide
-PCB (Back)          |  PCB (Front) |  Layer View
+Layer View          |  PCB (Front) |  PCB (Back)
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="image/pcb-thumbnails/pcb-3d-back-revc.jpg" width="350"> | <img src="" width="390"> | <img src="image/pcb-thumbnails/pcb-layers-view-revc.jpg" width="350">
+<img src="image/pcb-thumbnails/pcb-back-view-revc.jpg" width="350"> | <img src="image/pcb-thumbnails/pcb-front-view-revc.jpg" width="350"> | <img src="image/pcb-thumbnails/pcb-layers-view-revc.jpg" width="350">
 
 PCB manufacture requirements: 
 - Layers: `2-Layers`
