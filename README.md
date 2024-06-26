@@ -32,7 +32,7 @@ This is a slightly over-engineered tracker keyboard that integrates both Teensy4
 </div>
 
 <div style="display: flex; flex-direction: row; margin-top: 50px;">
-  <img src="image/cnc-build/1.jpg" style="width:30%; padding-right: 5px;">
+  <img src="image/cnc-build/2.jpg" style="width:30%; padding-right: 5px;">
 </div>
 
 
@@ -48,9 +48,9 @@ This is a slightly over-engineered tracker keyboard that integrates both Teensy4
 <img src="image/system diagram.jpg" width="350">
 
 ## Electronics Build Guide
-PCB (Back)          |  PCB (Front) |  Layer View
+Layer View          |  PCB (Front) |  PCB (Back)
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="image/pcb-3d-back.png" width="350"> | <img src="image/pcb-3d-front.png" width="390"> | <img src="image/pcb-layers-view.png" width="350">
+<img src="image/pcb-thumbnails/pcb-back-view-revc.jpg" width="350"> | <img src="image/pcb-thumbnails/pcb-front-view-revc.jpg" width="350"> | <img src="image/pcb-thumbnails/pcb-layers-view-revc.jpg" width="350">
 
 PCB manufacture requirements: 
 - Layers: `2-Layers`
@@ -63,17 +63,17 @@ All the components are 0603 footprints. The pads are designed with larger pads, 
 The stencil and reflow oven approach is demonstrated below and recommended. 
 PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 :-:|:-:|:-:|:-:
-<img src="image/20240620-DSCF4548.jpg" width="150"> | <img src="image/20240620-DSCF4552.jpg" width="150">| <img src="image/20240620-DSCF4557.jpg" width="150"> | <img src="image/20240620-DSCF4566.jpg" width="150">
+<img src="image/build-process/20240620-DSCF4548.jpg" width="150"> | <img src="image/build-process/20240620-DSCF4552.jpg" width="150">| <img src="image/build-process/20240620-DSCF4557.jpg" width="150"> | <img src="image/build-process/20240620-DSCF4566.jpg" width="150">
 
 ### Tips on Soldering Teensy 4.1 
 - Solder the pins that are marked with circles. Only 6 pins are required for soldering. This is enough to hold the board while still being easy to de-solder and repurpose if needed. To solder, add some solder flux onto the pads. Solder one pin first and ensure it's aligned properly. Place the soldering iron on the Teensy through-hole pad, and add a generous amount of solder. Hold the iron longer, around 8-15 seconds, and let the solder sink into the pad below.
-  - <img src="image/teensy-soldering.png" width="350">
+  - <img src="image/build-process/teensy-soldering.png" width="350">
 
 - Make a twisted wire for Teensy USB communication. Solder it and adding adhesive glue is recommended.
-  - <img src="image/twist-wire.jpg" width="350">
+  - <img src="image/build-process/twist-wire.jpg" width="350">
 
 ## PCB Testing
-<img src="image/20240620-L1008894.jpg" width="350">  
+<img src="image/build-process/20240620-L1008894.jpg" width="350">  
 
 🎉🎉🎉 Great job on finishing the PCB assembly. Now we will go through a checklist and testing process to help you get your tracker keyboard up and running!
 
@@ -115,11 +115,11 @@ Bill of Materials
 - x1 Layer 4 Acrylic (3mm thick)
 ```
 
-<img src="image/acylic_stacking.png" width="560">
+<img src="image/acrylic-build/acylic_stacking.png" width="560">
 
 Assembled (Front)          |  Assembled (Back)
 :-------------------------:|:-------------------------:
-<img src="image/acylic_front.png" width="350"> | <img src="image/acylic_back.png" width="350">
+<img src="image/acrylic-build/acylic_front.png" width="350"> | <img src="image/acrylic-build/acylic_back.png" width="350">
 
 ### Option 3: 3D Printed Enclosure
 This 3D printed design is nearly identical to the CNC version but optimized for 3D printing. Note that the USB lock threads are not available in this design.
@@ -139,8 +139,8 @@ How to assemble?
 
 Slicer Build Plate         |
 :-------------------------:|
-<img src="image/3d-printing-plate.jpg" width="350"> 
-<!-- <img src="image/3d-printed-demo.jpg" width="310"> -->
+<img src="image/3d-print-build/3d-printing-plate.jpg" width="350"> 
+<!-- <img src="image/\3d-print-build/3d-printed-demo.jpg" width="310"> -->
 
 # Software Guide
 Two firmware flashes are required:
