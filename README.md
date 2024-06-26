@@ -32,7 +32,7 @@ This is a slightly over-engineered tracker keyboard that integrates both Teensy4
 </div>
 
 <div style="display: flex; flex-direction: row; margin-top: 50px;">
-  <img src="image/cnc-build/1.jpg" style="width:30%; padding-right: 5px;">
+  <img src="image/cnc-build/2.jpg" style="width:30%; padding-right: 5px;">
 </div>
 
 
