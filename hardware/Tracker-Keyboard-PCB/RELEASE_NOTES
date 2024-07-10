@@ -1,0 +1,15 @@
+## REV C
+Fab File: 2024-06-25-FAB-REV-C.zip
+- Update BEATS to 0603 footprint for availability improvements
+- Improve EEPROM SOP-8 footprint.
+- Added Test-Points and Pick and Place fiducial marks
+- Update Teensy USB soldering from Pad to In-Place half holes.
+- Refine BOM
+- Export Pick and Place CSVs
+- Validated for PCB manufacturing process. Added FAB notes for the manufacturer.
+
+## REV B
+- Swaped EEPROM pins. Fixed incorrect CLK and CS Pins.
+
+## REV A
+- Initial Board design.
