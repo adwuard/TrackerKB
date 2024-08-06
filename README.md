@@ -1,8 +1,7 @@
 
-### Fully Assembled units and parts are available here: [Ed's Lab Shop](https://edslab.myshopify.com/) 
-Batch update:
-The first batch is estimated to be shipped by July 14, 2024.
-
+### Fully Assembled units and parts are available here: 
+Small batch custom build. Limited quantity now available and ready to ship!  
+[Ed's Lab Shop](https://edslab.myshopify.com/)   
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
@@ -66,11 +65,16 @@ PCB | Stencil and Solder Paste | Pick and Place | Reflow Oven
 <img src="image/build-process/20240620-DSCF4548.jpg" width="150"> | <img src="image/build-process/20240620-DSCF4552.jpg" width="150">| <img src="image/build-process/20240620-DSCF4557.jpg" width="150"> | <img src="image/build-process/20240620-DSCF4566.jpg" width="150">
 
 ### Tips on Soldering Teensy 4.1 
-- Solder the pins that are marked with circles. Only 6 pins are required for soldering. This is enough to hold the board while still being easy to de-solder and repurpose if needed. To solder, add some solder flux onto the pads. Solder one pin first and ensure it's aligned properly. Place the soldering iron on the Teensy through-hole pad, and add a generous amount of solder. Hold the iron longer, around 8-15 seconds, and let the solder sink into the pad below.
+- Solder the pins that are marked with circles. Only 6 pins are required for soldering. This is enough to hold the board while still being easy to de-solder and repurpose if needed. To solder, add some solder flux onto the pads. Solder one pin first and ensure it's aligned properly. Place the soldering iron on the Teensy through-hole pad, and add a generous amount of solder. Hold the iron longer, around 8-15 seconds, and let the solder sink into the pad below. Then use multi-meter to test continuity between teensy pad and the pad directly below.
   - <img src="image/build-process/teensy-soldering.png" width="350">
 
+REV (A/B) Hardware Teensy USB Connection
 - Make a twisted wire for Teensy USB communication. Solder it and adding adhesive glue is recommended.
   - <img src="image/build-process/twist-wire.jpg" width="350">
+REV (C) Hardware Teensy USB Connection
+- In place soldering pads, solder directly with the Teensy USB Test Points
+- <img src="image/build-process/rev-c-usb-tp-soldering.jpg" width="350">
+
 
 ## PCB Testing
 <img src="image/build-process/20240620-L1008894.jpg" width="350">  
