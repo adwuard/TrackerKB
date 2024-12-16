@@ -1,8 +1,13 @@
 RELEASE NOTE
 
-[1.0.0] 06/18/2024
-- HID Implementation
-- Support for tracker's 8 keys key mapping
+## [1.0.0] - 2024-06-18
+- Implemented HID support.
+- Added support for tracker's 8-key mapping.
 
-[1.1.0] 06/14/2024
-- Fix proper key mapping keycode for x ans z.
+## [1.1.0] - 2024-06-14
+- Fixed key mapping for 'x' and 'z' keys.
+
+## [2.0.0] - 2024-12-16
+- Added support for M8C layout.
+- Provided two firmware outputs: M8 Web-display and M8C `.uf2` files.
+- No update needed for M8 Web-display firmware.
