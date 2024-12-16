@@ -52,16 +52,30 @@ extern Adafruit_USBD_Device TinyUSBDevice;
 
 // Key code mapping for the keys
 static const int kMaxKeys = 8;
+
+#ifdef USE_M8C
 static const char keys_map[kMaxKeys][2] = {
-    {KEY_UP_PIN, KEY_UP_ARROW}, //mapped to arrow up
-    {KEY_DOWN_PIN, KEY_DOWN_ARROW}, //mapped to arrow down
-    {KEY_LEFT_PIN, KEY_LEFT_ARROW}, //mapped to arrow left
-    {KEY_RIGHT_PIN, KEY_RIGHT_ARROW}, //mapped to arrow right 
-    {KEY_OPTION_PIN, 'z'}, //mapped to z key
-    {KEY_EDIT_PIN, 'x'}, //mapped to x Key
-    {KEY_SHIFT_PIN, KEY_LEFT_SHIFT}, //mapped to  Left shift
-    {KEY_PLAY_PIN, ' '}  //mapped to Space-bar
+    {KEY_UP_PIN, KEY_UP_ARROW}, // mapped to arrow up
+    {KEY_DOWN_PIN, KEY_DOWN_ARROW}, // mapped to arrow down
+    {KEY_LEFT_PIN, KEY_LEFT_ARROW}, // mapped to arrow left
+    {KEY_RIGHT_PIN, KEY_RIGHT_ARROW}, // mapped to arrow right
+    {KEY_OPTION_PIN, 'a'}, // mapped to 'a' key
+    {KEY_EDIT_PIN, 's'}, // mapped to 's' key
+    {KEY_SHIFT_PIN, KEY_LEFT_SHIFT}, // mapped to Left shift
+    {KEY_PLAY_PIN, ' '}  // mapped to Space-bar
 };
+#elif defined(USE_M8_WEB_DISPLAY)
+static const char keys_map[kMaxKeys][2] = {
+    {KEY_UP_PIN, KEY_UP_ARROW}, // mapped to arrow up
+    {KEY_DOWN_PIN, KEY_DOWN_ARROW}, // mapped to arrow down
+    {KEY_LEFT_PIN, KEY_LEFT_ARROW}, // mapped to arrow left
+    {KEY_RIGHT_PIN, KEY_RIGHT_ARROW}, // mapped to arrow right 
+    {KEY_OPTION_PIN, 'z'}, // mapped to 'z' key
+    {KEY_EDIT_PIN, 'x'}, // mapped to 'x' key
+    {KEY_SHIFT_PIN, KEY_LEFT_SHIFT}, // mapped to Left shift
+    {KEY_PLAY_PIN, ' '}  // mapped to Space-bar
+};
+#endif
 
 static const int kDebounceDelay = 5;
 static uint32_t debounce[kMaxKeys][2];
