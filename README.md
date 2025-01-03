@@ -176,4 +176,5 @@ The keyboard is implemented with RP2040 keyboard HID implementation. You wouldn'
 ### Steps for Flashing Keyboard Firmware:
 If you purchased from the Ed's Lab Shop. The default Keymap firmware works with `M8 Web Display` Client. If you want `M8C` as your default client. 
 Please follow the following guide:  
-[![Keyboard Firmware Flash Guide](https://img.shields.io/badge/Keyboard%20Firmware%20Flash%20Guide-purple?style=for-the-badge)](https://github.com/adwuard/TrackerKB/tree/master/software/Release/2.0.0)
+[![Keyboard Firmware Flash Guide](https://img.shields.io/badge/Keyboard%20Firmware%20Flash%20Guide-purple?style=for-the-badge)](https://hsuanhanlai.com/trackerkb-keyboard-firmware-flash/)
+
