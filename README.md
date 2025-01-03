@@ -174,8 +174,6 @@ The keyboard is implemented with RP2040 keyboard HID implementation. You wouldn'
 
 ### Pre-built keyboard firmware can be found here -->  [Keyboard Firmware](software/Release)
 ### Steps for Flashing Keyboard Firmware:
-- Download the single firmware `pico-tracker-keyboard.uf2` file from the [Release](software/Release) Folder.
-- "Press and Hold" the `Boot` button on the RP2040 PCB board, connect the USB to your PC, then release the `Boot` button.
-- A disk will show up or get mounted, indicating that your RP2040 is in loader mode and ready to load firmware.
-- Simply drag and drop the `pico-tracker-keyboard.uf2` firmware file to the mounted disk.
-- The RP2040 will then unmount and reboot itself with the new firmware.
+If you purchased from the Ed's Lab Shop. The default Keymap firmware works with `M8 Web Display` Client. If you want `M8C` as your default client. 
+Please follow the following guide:  
+[![Keyboard Firmware Flash Guide](https://img.shields.io/badge/Keyboard%20Firmware%20Flash%20Guide-purple?style=for-the-badge)](https://github.com/adwuard/TrackerKB/tree/master/software/Release/2.0.0)
